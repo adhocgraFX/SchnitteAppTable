@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schnitte.RootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Datei">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleNew" text="Neue Datei" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Öffnen" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Speichern" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Speichern unter" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Beenden" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Bearbeiten">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleOptions" text="Einstellungen" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hilfe">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleHelp" text="Hilfe" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="Info" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

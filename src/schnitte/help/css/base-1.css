@@ -1,0 +1,400 @@
+/* ----------- base styles ----------- */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 100%; /* 	100% ~ 16px */
+}
+
+body {
+    background: #f9f9f9;
+    font-size: 100%; /*	100% ~ 16px *//*	1em ~ 16px */
+    line-height: 1.5; /*	Web > Print *//*	p eingeschlossen 	*/
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2; /*	h < p */
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #607d8b;
+    margin: 0.75em 0 0.5em 0;
+}
+
+h1 {
+    font-size: 2.00em;
+}
+
+/* 32px */
+h2 {
+    font-size: 1.66em;
+}
+
+/* 28px */
+h3 {
+    font-size:  1.50em;
+}
+
+/* 24px */
+h4 {
+    font-size:  1.33em;
+}
+
+/* 21px */
+h5 {
+    font-size:  1.16em;
+}
+
+/* 19px */
+h6 {
+    font-size: 1.00em;
+}
+
+/* 16px */
+p {
+    margin-bottom: 0.75em;
+    color: #333;
+}
+
+p img {
+    margin: 0;
+}
+
+p.lead {
+    font-size: 125%;
+    color: #455a64;
+    margin-top: 0.75em;
+    text-indent: 0;
+    font-weight: 400;
+}
+
+p.bildlegende, p.img_caption {
+    font-size: 100%;
+    color: #455a64;
+    text-indent: 0;
+    font-style: italic;
+    margin: 0.375em 0 0.75em 0;
+}
+
+p.autor {
+    font-size: 100%;
+    color: #455a64;
+    text-indent: 0;
+    text-align: right;
+    font-style: italic;
+    font-weight: 400;
+}
+
+span.highlight {
+    color: white;
+    background: #455a64;
+}
+
+/*	Blockquotes  */
+blockquote,
+blockquote p,
+q,
+cite {
+    font-size: 1.125em;
+    line-height: 1.5;
+    color: #455a64;
+    font-style: italic;
+    font-weight: 400;
+}
+
+blockquote {
+    padding: 1em;
+    margin: 0;
+    border-left: 0.5em solid #ccc;
+    border-right: 0.5em solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #ffffff;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 100%;
+    text-align: right;
+}
+
+/*	pocket grid	*/
+.block-group {
+    margin: -1em;
+}
+
+.block {
+    padding: 1em;
+}
+
+/* widths */
+.wrapper {
+    margin: 0 auto;
+    background: transparent;
+    max-width: 40em;
+}
+
+header {
+    border-bottom: solid 1px #ccc;
+    background: #fff;
+    padding: 1em 0 1.25em 0;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    border: solid 1px #90a4ae;
+    margin: 1em auto 0 auto;
+    padding: 1em;
+    background: #90a4ae;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 400;
+}
+
+article {
+
+}
+
+section[role ="main"] {
+
+}
+
+aside[role="complementary"] {
+    background: transparent;
+}
+
+/*	responsive nav	*/
+#nav {
+    background: #90a4ae;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#nav ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+
+#nav li {
+    width: 100%;
+    display: block;
+}
+
+#nav a {
+    color: #eee;
+    text-decoration: none;
+
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    transition: background .3s ease;
+
+    border-bottom: 1px solid #607d8b;
+
+    display: block;
+    padding: .6em 1em;
+    width: 100%;
+}
+
+#nav a:hover {
+    background: #607d8b;
+    color: #fff;
+}
+
+#nav a:active  {
+    color: #fff;
+    background: #455a64;
+}
+
+#nav a.active  {
+    color: #fff;
+    background: #455a64;
+}
+
+#nav a:focus {
+    color: #fff;
+    background: #455a64;
+}
+
+#nav li:first-child a {
+    border-top: 0;
+}
+
+#nav li:last-child a {
+    border-bottom: 0;
+}
+
+#toggle {
+    display: none;
+}
+
+.js #nav {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+
+#nav {
+    top: 0;
+    width: 100%;
+    position: relative;
+}
+
+#nav.opened {
+    max-height: 9999px;
+}
+
+#nav a:hover {
+    /* background: transparent; */
+}
+
+#nav .active a:hover {
+    color: #fff;
+    background: #90a4ae;
+}
+
+#toggle {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    width: 70px;
+    height: 55px;
+    float: right;
+    margin: 0 -2em 1em 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: #263238 url("hamburger.gif") no-repeat 50% 33%;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        font-size: 106.25%;  /* ~ 17px /* 112.5%; /*	768px / 112,5% ~ 18px */
+        line-height: 1.55;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /* 54px */
+    h2 {
+        font-size: 2.25em;
+    }
+
+    /* 41px */
+    h3 {
+        font-size: 1.5em;
+    }
+
+    /* 27px */
+    h4 {
+        font-size: 1.3125em;
+    }
+
+    /* 24px */
+    h5 {
+        font-size: 1.125em;
+    }
+
+    /* 20px */
+    h6 {
+        font-size: 1em;
+    }
+
+    /* 18px */
+    /* widths */
+    .wrapper {
+        max-width: 48em;
+    }
+
+    section[role ="main"] {
+        width: 61.8%; /* goldener Schnitt */
+    }
+
+    aside[role="complementary"] {
+        width: 38.2%; /* goldener Schnitt */
+        border-left: dotted 1px #999;
+    }
+
+    /*	nav	*/
+    #nav ul li a {
+        float: left;
+        width: 20%;
+        border-bottom: 0;
+        border-top: 0;
+        border-right: 1px solid #607d8b;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    body {
+        font-size: 112.5%; /*	768px / 112,5% ~ 18px */ /*125%; /*	1280px / 125% ~ 20px */
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 3.4231em;
+    }
+
+    /* 62px */
+    h2 {
+        font-size: 2.6154em;
+    }
+
+    /* 47px */
+    h3 {
+        font-size: 2.1154em;
+    }
+
+    /* 38px */
+    h4 {
+        font-size: 1.6154em;
+    }
+
+    /* 29px */
+    h5 {
+        font-size: 1.3077em;
+    }
+
+    /* 24px */
+    h6 {
+        font-size: 1em;
+    }
+
+    /* widths */
+    .wrapper {
+        max-width: 56em;
+
+    }
+}

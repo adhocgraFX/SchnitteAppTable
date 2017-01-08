@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="SchnitteAppTable">
+    <output-path>$PROJECT_DIR$/out/artifacts/SchnitteAppTable</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="schnitte.MainApp" />
+        <option name="description" value="little schnitte app" />
+        <option name="height" value="600" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/schnitte/icons/cut.png" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/schnitte/icons/favicon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="title" value="SchnitteApp" />
+        <option name="vendor" value="adhocgrafx" />
+        <option name="version" value="1.0" />
+        <option name="width" value="800" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="SchnitteAppTable.jar">
+        <element id="module-output" name="SchnitteAppTable" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

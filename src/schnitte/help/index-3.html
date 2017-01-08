@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SchnitteApp Hilfe - Kapitel 3</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/pocketgrid.css">
+    <link rel="stylesheet" href="css/base-1.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+</head>
+
+<body>
+<nav id="nav" role="navigation">
+    <ul>
+        <li><a href="index-1.html">Home</a></li>
+        <li><a href="index-2.html">About</a></li>
+        <li><a href="index-3.html" class="active">Projects</a></li>
+    </ul>
+</nav>
+<header role="banner">
+    <div class="logo"><a href="index-1.html"><H1>SchnitteApp</H1></a></div>
+    <audio src="audio/a6ce8991ce50.ogg" loop preload="auto"></audio>
+</header>
+<div class="block-group wrapper">
+    <section class="block" role="main">
+        <article>
+            <h1>Typography</h1>
+            <p>The typography is designed with a harmonical modular scale within its basic styles. All font sizes of
+                paragraphs and headlines are set relative to the default html size of 100% = 16px. The line height is
+                set on a 1.5 base for paragraphs and 1.2 for headlines.</p>
+            <p>Regular paragraphs on small media sizes are set at 100% = 16px, on medium screen sizes at 112,5% = 18px
+                and on larger screen sizes at 125% = 20px. Thereby, they behave on different screen sizes responsive but
+                maintain their visual appearance and line-heights.</p>
+            <h2>Images and text</h2>
+            <p><img src="images/K3.jpg" alt="bild" title="Bildbeschreibung manuell" class="max-image"/></p>
+            <p>Regular paragraphs, following an image, have no indents. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed faucibus purus vitae diam posuere nec eleifend elit dictum.</p>
+            <p class="autor">This paragraph is formatted with the <span class="highlight">autor</span> class.</p>
+            <br>
+
+            <img src="images/K5.jpg" alt="bild" title="Bildbeschreibung manuell" class="max-image"/>
+            <p class="bildlegende">This paragraph is formatted with the <span class="highlight">bildlegende</span>
+                class.</p>
+            <p class="lead">This paragraph is formatted with the <span class="highlight">lead class</span> - 125% -
+                usefull for leading parts and teasers. <em>"Lorem Ipsum"-Text ist ein oft genutzter Fülltext von
+                    Designern, um das Aussehen von Inhalt zu simulieren.</em></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus purus vitae diam posuere nec
+                eleifend elit dictum.</p>
+            <ul>
+                <li>Default mobile font scale: 100% ~ 16px body font-size: 1em - 2em</li>
+                <li>tablet font scale: 112.5% ~ 18px body font-size: 1em - 3em</li>
+                <li>desktop MODULOR font scale: 125% ~ 20px body font-size: 1em - 3.4em</li>
+            </ul>
+            <p class="no-indent">body copy</p>
+            <h6>Heading H6</h6>
+            <h5>Heading H5</h5>
+            <h4>Heading H4</h4>
+            <h3>Heading H3</h3>
+            <h2>Heading H2</h2>
+            <h1>Heading H1</h1>
+            <blockquote>
+                <p>Tell me and I'll forget; show me and I may remember; involve me and I understand.</p>
+                <cite>Chinese Proverb</cite></blockquote>
+        </article>
+    </section>
+    <aside class="block" role="complementary">
+        <h5>Sidebar</h5>
+        <p>"Lorem Ipsum"-Text ist ein oft genutzter Fülltext von Designern, um das Aussehen von Inhalt zu
+            simulieren.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus purus vitae diam posuere nec eleifend
+            elit dictum.</p>
+    </aside>
+</div>
+<footer role="contentinfo">
+    <h5>Footer</h5>
+    <p>"Lorem Ipsum"-Text ist ein oft genutzter Fülltext von Designern, um das Aussehen von Inhalt zu
+        simulieren.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus purus vitae diam posuere nec eleifend
+        elit dictum.</p>
+</footer>
+<script src="js/responsive-nav.js"></script>
+<script>
+    var navigation = responsiveNav("#nav");
+</script>
+</body>
+</html>

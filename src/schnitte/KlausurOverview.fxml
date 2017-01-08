@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schnitte.KlausurOverviewController">
+    <center>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <SplitPane dividerPositions="0.382" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <TableView fx:id="klausurTable" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="klausurColumn" text="Prüfung:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="klausurColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="kursColumn" text="Kurs | Klasse:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="kursColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="semesterColumn" text="Semester | Schuljahr:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="semesterColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="datumColumn" text="Datum:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="datumColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="anzahlColumn" text="Anzahl:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="anzahlColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="schnittPunkteColumn" text="Punkteschnitt:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="schnittPunkteColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="schnittNotenColumn" text="Notenschnitt:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="schnittNotenColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="prozentUngenuegendColumn" text="Arbeiten ab P3 | N5 in %:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="prozentUngenuegendColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                        <TableColumn fx:id="infoColumn" text="Info:">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="infoColumn" />
+                                            </cellValueFactory>
+                                        </TableColumn>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="klausurDetailsPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <SplitPane dividerPositions="0.382" layoutY="44.0" orientation="VERTICAL" prefHeight="554.0" prefWidth="532.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <GridPane hgap="5.0" layoutX="83.0" layoutY="22.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="300.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <padding>
+                                                        <Insets left="7.0" right="7.0" />
+                                                    </padding>
+                                                    <children>
+                                                        <Label text="Prüfung:" GridPane.halignment="RIGHT">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label text="Kurs | Klasse:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                                                        <Label text="Semester | Schuljahr:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                                        <Label text="Datum:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                                                        <Label text="Anzahl der Arbeiten:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+                                                        <Label text="Punkteschnitt:" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                                                        <Label text="Notenschnitt:" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+                                                        <Label text="P3-P0 | N5-N6 in %:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+                                                        <Label text="Info:" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+                                                        <Label fx:id="klausurLabel" text="Label" GridPane.columnIndex="1">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="kursLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                        <Label fx:id="semesterLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                        <Label fx:id="datumLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                        <Label fx:id="anzahlLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                        <Label fx:id="schnittPunkteLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                        <Label fx:id="schnittNotenLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                        <Label fx:id="prozentUngenuegendLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                        <Label fx:id="infoLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                    </children>
+                                                </GridPane>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <BarChart fx:id="punkteChart" layoutX="-123.0" layoutY="-148.0" style="-fx-bar-gap: 3; -fx-category-gap: 6;" title="Verteilung der Punkte | Noten" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <xAxis>
+                                                        <CategoryAxis label="Punkte | Noten" side="BOTTOM" />
+                                                    </xAxis>
+                                                    <yAxis>
+                                                        <NumberAxis label="Anzahl" side="LEFT" />
+                                                    </yAxis>
+                                                </BarChart>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <ButtonBar buttonMinWidth="30.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#handleNewKlausur" text="Neue Prüfung">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/page.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleEditKlausur" text="Bearbeiten">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/pencil.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handlePrint" text="Drucken">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/print.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleCompare" text="Vergleichen">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/stat.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleDeleteKlausur" text="Löschen">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/delete.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Separator maxWidth="40.0" minWidth="20.0" orientation="VERTICAL" prefWidth="30.0" />
+                <Button mnemonicParsing="false" onAction="#handleEinstellungen" text="Einstellungen">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/cog.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </buttons>
+         <BorderPane.margin>
+            <Insets right="10.0" left="10.0"/>
+         </BorderPane.margin>
+        </ButtonBar>
+    </top>
+   <bottom>
+       <ToolBar prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <items>
+               <Label text="Prüfung:" />
+               <Label fx:id="klausurLabel2" prefWidth="180.0" text="Label" />
+               <Label text="Punkteschnitt:" />
+               <Label fx:id="schnittPunkteLabel2" prefWidth="80.0" text="Label" />
+               <Label text="Notenschnitt:" />
+               <Label fx:id="schnittNotenLabel2" prefWidth="80.0" text="Label" />
+               <Label text="P3-P0 | N5-N6 in %:" />
+               <Label fx:id="prozentUngenuegendLabel2" prefWidth="80.0" text="Label" />
+           </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>
