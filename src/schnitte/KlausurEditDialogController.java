@@ -115,6 +115,7 @@ public class KlausurEditDialogController {
     private Klausur klausur;
     private boolean okClicked = false;
 
+
     public KlausurEditDialogController() {
 
         // todo catch exceptions evtl anpassen
@@ -161,28 +162,6 @@ public class KlausurEditDialogController {
                 }
             }
         }
-
-        // Create data for Semester Combo Boxes
-        /*
-        myComboSemesterData.add(new Semester("11/1"));
-        myComboSemesterData.add(new Semester("11/2"));
-        myComboSemesterData.add(new Semester("12/1"));
-        myComboSemesterData.add(new Semester("12/2"));
-        myComboSemesterData.add(new Semester("2016/17"));
-        myComboSemesterData.add(new Semester("2017/18"));
-        myComboSemesterData.add(new Semester("2018/19"));
-        myComboSemesterData.add(new Semester("2019/20"));
-
-        // Create data for Kurse Combo Boxes
-        myComboKurseData.add(new Kurse("1ku1"));
-        myComboKurseData.add(new Kurse("1ku2"));
-        myComboKurseData.add(new Kurse("1ku3"));
-        myComboKurseData.add(new Kurse("2ku1"));
-        myComboKurseData.add(new Kurse("2ku2"));
-        myComboKurseData.add(new Kurse("2ku3"));
-        myComboKurseData.add(new Kurse("W-Seminar"));
-        myComboKurseData.add(new Kurse("P-Seminar"));
-        */
     }
 
     /**
